@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#070b12" />
+  <meta name="color-scheme" content="dark" />
+  <title>七情六欲分布测试</title>
+  <meta name="description" content="通过 26 个人生情境，了解你的七情六欲分布。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#app">跳到主要内容</a>
+  <div class="grain"></div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="回到首页"><span class="seal">情</span><span>七情六欲分布</span></a>
+    <button class="soundless" id="restartTop" hidden>重新测试</button>
+  </header>
+  <main id="app" tabindex="-1"></main>
+  <footer><span>SEVEN EMOTIONS · SIX DESIRES</span><span>结果仅呈现本次作答的相对分布，不构成专业心理诊断</span></footer>
+  <canvas id="posterCanvas" width="1080" height="1440" hidden></canvas>
+  <script src="questions.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
